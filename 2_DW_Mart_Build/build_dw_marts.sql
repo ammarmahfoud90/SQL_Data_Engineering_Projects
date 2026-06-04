@@ -1,4 +1,4 @@
---duckdb dw_mart.duckdb -c "".read build_dw_marts.sql"
+--duckdb dw_mart.duckdb -c ".read build_dw_marts.sql"
 
 
 -- STEP 1 : DW - Create star schema tables
@@ -9,3 +9,6 @@
 
 -- step 3: Mart - Create_flat_mart.sql
 .read 03_create_flat_mart.sql
+
+-- step 4: Mart - Create skills demand mart
+.read 04_create_skills_mart.sql
