@@ -22,7 +22,7 @@ SELECT
     jpf.salary_rate,
     jpf.salary_year_avg,
     jpf.salary_hour_avg,
-    -- Company dimention fields
+    -- Company dimension fields
     cd.company_id,
     cd.name AS company_Name,
     ARRAY_AGG(
