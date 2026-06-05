@@ -4,7 +4,7 @@ DROP SCHEMA IF EXISTS priority_mart CASCADE;
 
 CREATE SCHEMA priority_mart;
 
-SELECT '=== Loading Roles for Proirity Mart ===' AS info;
+SELECT '=== Loading Roles for Priority Mart ===' AS info;
 CREATE TABLE priority_mart.priority_roles (
     role_id         INTEGER         PRIMARY KEY,
     role_name       VARCHAR,
@@ -19,7 +19,7 @@ VALUES
 
 SELECT * FROM  priority_mart.priority_roles;
 
-SELECT '=== Loading Snapshot for Proirity Mart ===' AS info;
+SELECT '=== Loading Snapshot for Priority Mart ===' AS info;
 CREATE OR REPLACE TABLE  priority_mart.priority_jobs_snapshot (
     jobs_id            INTEGER PRIMARY KEY,
     job_title_short     VARCHAR,
